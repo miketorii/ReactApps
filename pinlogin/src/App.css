@@ -1,0 +1,70 @@
+.app-main {
+  text-align: center;
+}
+
+/*********************************
+*   Header
+**********************************/
+.app-header {
+  background-color: lightgray;
+  text-align: left;
+}
+
+/*********************************
+*   Footer
+**********************************/
+.app-footer {
+  background-color: lightgray;
+  text-align: right;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/*********************************
+*   body
+**********************************/
+.app-body {
+  background-color: white;
+}
+.app-pinpad {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #d9deff;
+  border: 1px solid #363b5e;
+  user-select: none;
+}
+.app-passcode {
+  margin: 10px auto 10px auto;
+  padding: 10px;
+  display: block;
+  width: 50%;
+  height: 30px;
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 0.2em;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: default;
+}
+
+.app-pinkey {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.15);
+  color: #363b5e;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.app-pinkey:active {
+  background: rgba(0, 0, 0, 0.25);
+}
