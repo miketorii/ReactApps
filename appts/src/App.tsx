@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import "./App.css";
+import { SimpleButton  } from './SimpleButton';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <LikeButton />
+        <SimpleButton />
       </header>
     </div>
   );
