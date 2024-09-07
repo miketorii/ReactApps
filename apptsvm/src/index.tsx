@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 
 import Hello from './components/Hello';
+import MyText from './components/MyText';
+import MyMessage from './components/MyMessage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,6 +13,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Hello />
+    <MyText content='given props as string arg in MyText' />
+    <MyMessage />
   </React.StrictMode>
 );
 
