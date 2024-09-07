@@ -1,6 +1,5 @@
-import React from 'react';
-
-function Hello() {
+//function Hello() {
+const Hello = () => {
   const onMyClickFunc = () => { alert('You clicked!'); };
   
   const text = 'If you click here, alert is displayed from this component';
