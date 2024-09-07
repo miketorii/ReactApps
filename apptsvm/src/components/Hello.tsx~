@@ -1,0 +1,16 @@
+const Hello = () => {
+      const onMyClickFunc = () => { alert('Hello Mike'); };
+
+      const text = 'Hello React';
+
+      return {
+      	     <div onClick={onMyClickFunc}>
+	     	  {text}
+	     </div>
+      };
+};
+
+export default Hello;
+
+
+
