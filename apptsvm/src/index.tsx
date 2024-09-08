@@ -6,6 +6,7 @@ import App from './App';
 import Hello from './components/Hello';
 import MyText from './components/MyText';
 import MyMessage from './components/MyMessage';
+import MyCounter from './components/MyCounter';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,6 +16,7 @@ root.render(
     <Hello />
     <MyText content='given props as string arg in MyText' />
     <MyMessage />
+    <MyCounter initialCount={0} />    
   </React.StrictMode>
 );
 
