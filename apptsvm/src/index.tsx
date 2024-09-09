@@ -8,6 +8,7 @@ import MyText from './components/MyText';
 import MyMessage from './components/MyMessage';
 import MyCounter from './components/MyCounter';
 import MyDoubleCounter from './components/MyDoubleCounter';
+import MyParent from './components/MyParent';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,7 +19,8 @@ root.render(
     <MyText content='given props as string arg in MyText' />
     <MyMessage />
     <MyCounter initialCount={0} />
-    <MyDoubleCounter initialCount={0} />    
+    <MyDoubleCounter initialCount={0} />
+    <MyParent />
   </React.StrictMode>
 );
 
