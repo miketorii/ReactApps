@@ -9,6 +9,8 @@ import MyMessage from './components/MyMessage';
 import MyCounter from './components/MyCounter';
 import MyDoubleCounter from './components/MyDoubleCounter';
 import MyParent from './components/MyParent';
+import MyClock from './components/MyClock';
+import MyMemo from './components/MyMemo';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -21,6 +23,8 @@ root.render(
     <MyCounter initialCount={0} />
     <MyDoubleCounter initialCount={0} />
     <MyParent />
+    <MyClock />
+    <MyMemo />    
   </React.StrictMode>
 );
 
