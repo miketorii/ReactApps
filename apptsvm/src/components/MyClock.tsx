@@ -61,7 +61,7 @@ const MyClock = () => {
   ///////////////////////////////////////////
   //
   return (
-    <div style={{ background : 'skyblue' }}>
+    <div style={{ background : '#8cf283' }}>
         <span>Curret Time</span>
 	<span>: {timestamp.toLocaleString(locale)}</span>
 	<select value={locale} onChange={(e) => setLocale( getLocaleFromString(e.target.value) ) }>

@@ -11,6 +11,8 @@ import MyDoubleCounter from './components/MyDoubleCounter';
 import MyParent from './components/MyParent';
 import MyClock from './components/MyClock';
 import MyMemo from './components/MyMemo';
+import MyContext from './components/MyContext';
+import MyImageUpLoader from './components/MyImageUpLoader';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -24,7 +26,9 @@ root.render(
     <MyDoubleCounter initialCount={0} />
     <MyParent />
     <MyClock />
-    <MyMemo />    
+    <MyMemo />
+    <MyContext />
+    <MyImageUpLoader />            
   </React.StrictMode>
 );
 
