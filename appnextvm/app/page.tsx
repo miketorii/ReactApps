@@ -1,4 +1,4 @@
-import { GetStaticProps, NextPage, NextPageContext } from 'next';
+import { NextPage, NextPageContext } from 'next';
 import Head from 'next/head';
 
 type SSGProps = {
