@@ -16,6 +16,8 @@ const SSGPage: NextPage<SSGProps> = (props) => {
 		      <main>
 			<p>This is NEXT.js SSG page!</p>
 			<p>{message}</p>
+			<p>{process.env.TEST}</p>
+			<p>{process.env.NEXT_PUBLIC_TEST}</p>			
 		      </main>
 	      </div>
        );
