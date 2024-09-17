@@ -1,4 +1,5 @@
-import { NextPage, NextPageContext } from 'next';
+//import { NextPage, NextPageContext } from 'next';
+import { NextPage } from 'next';
 import Head from 'next/head';
 
 type SSGProps = {
