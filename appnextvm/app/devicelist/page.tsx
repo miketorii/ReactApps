@@ -1,7 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
+import styled from 'styled-components';
+
+const H1 = styled.h1`
+      color: red;
+`
 
 export default function DeviceListPage(){
 
@@ -25,7 +30,7 @@ export default function DeviceListPage(){
 
 	return (
               <div>
-		<h1>This is devicelist page.</h1>
+		<H1>This is devicelist page.</H1>
 		<h2>{devicedata}</h2>
 		<p />
 		<button onClick={getData}>get</button>
