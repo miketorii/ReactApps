@@ -26,7 +26,7 @@ const Button = styled.button<ButtonProps>`
       background: ${(props) => props.backgroundColor};
       border: 2px solid ${(props) => props.color};
 
-      font-size: 2em;
+      font-size: 1em;
       margin:	 1em;
       padding: 0.25em 1em;
       border-radius: 8px;
@@ -46,6 +46,14 @@ export default function DeviceListPage(){
 		.catch((e) => { console.log(e); } )
        },[]);
 */
+	let devices = [
+		{ modelname: 'iR-ADV C5801' },
+		{ modelname: 'iR-ADV C5802' },
+		{ modelname: 'iR-ADV C5803' },
+		{ modelname: 'iR-ADV C5804' },
+		{ modelname: 'iR-ADV C5805' }		
+	];
+
 
 	async function getData(){
 	    const res = await fetch("/api/getdevice");
@@ -61,10 +69,15 @@ export default function DeviceListPage(){
 		<p />
 		<Badge>Device List</Badge>
 		<p />
+		<ul>
+			{ devices.map( (obj) => (<li>{obj.modelname}</li>) ) }
+		</ul>
+		<p />
 		<Button backgroundColor="#1E90FF" color="white">Detail</Button>
 		<Button backgroundColor="transparent" color="#FF0000">More</Button>
 		<p />
 		<button onClick={getData}>get</button>
+		<p />
 		<Link href="/">Back</Link>
 	      </div>
 	);
