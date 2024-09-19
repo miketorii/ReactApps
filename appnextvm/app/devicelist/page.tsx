@@ -47,11 +47,11 @@ export default function DeviceListPage(){
        },[]);
 */
 	let devices = [
-		{ modelname: 'iR-ADV C5801' },
-		{ modelname: 'iR-ADV C5802' },
-		{ modelname: 'iR-ADV C5803' },
-		{ modelname: 'iR-ADV C5804' },
-		{ modelname: 'iR-ADV C5805' }		
+		{ modelname: 'iR-ADV C5801', status: 30001, serialnumber: '80002453' },
+		{ modelname: 'iR-ADV C5802', status:     0, serialnumber: '80002454' },
+		{ modelname: 'iR-ADV C5803', status: 10001, serialnumber: '80002455' },
+		{ modelname: 'iR-ADV C5804', status: 40002, serialnumber: '80002456' },
+		{ modelname: 'iR-ADV C5805', status: 10002, serialnumber: '80002457' },		
 	];
 
 
@@ -70,7 +70,7 @@ export default function DeviceListPage(){
 		<Badge>Device List</Badge>
 		<p />
 		<ul>
-			{ devices.map( (obj) => (<li>{obj.modelname}</li>) ) }
+			{ devices.map( (obj) => (<li>{obj.modelname}    {obj.serialnumber}    {obj.status}</li>) ) }
 		</ul>
 		<p />
 		<Button backgroundColor="#1E90FF" color="white">Detail</Button>
