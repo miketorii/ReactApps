@@ -70,7 +70,7 @@ export default function DeviceListPage(){
 		<Badge>Device List</Badge>
 		<p />
 		<ul>
-			{ devices.map( (obj) => (<li>{obj.modelname}    {obj.serialnumber}    {obj.status}</li>) ) }
+			{ devices.map( (obj) => (<li>{obj.modelname}    {obj.serialnumber}    {obj.status} <Link href="/devicedetail">...</Link></li>) ) }
 		</ul>
 		<p />
 		<Button backgroundColor="#1E90FF" color="white">Detail</Button>
