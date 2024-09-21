@@ -21,9 +21,13 @@ export function NavLinks() {
 		      DeviceList
 		</Link>
 		<p/>
-		<Link className={`link ${pathname === '/usa' ? 'active' : ''} w3-bar-item`} href="/usa">
-		      USA
-		</Link>		
+		<Link className={`link ${pathname === '/usa' ? 'active' : ''} w3-bar-item`} href="/tailwindpage">
+		      Tailwind
+		</Link>
+		<p/>
+		<Link className={`link ${pathname === '/usa' ? 'active' : ''} w3-bar-item`} href="/styledcomppage">
+		      Styled Component
+		</Link>				
 	      </nav>
 	      </div>
        );
