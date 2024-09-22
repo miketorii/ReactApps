@@ -4,6 +4,6 @@ This repository has React/Nextjs codes.
 Nextjs pages.
 
 ![devicelist](https://github.com/user-attachments/assets/b15f6a5e-c586-4033-80f4-4f71ffb37bdf)
+![devicedetail](https://github.com/user-attachments/assets/f2187be1-e7b4-46ba-9bb2-8255711a6fb4)
 
-![devicedetailpage](https://github.com/user-attachments/assets/88a94235-ed22-4cfd-b066-005616d053bd)
 
