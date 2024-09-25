@@ -45,7 +45,7 @@ export default function NetherlandsPage(){
 		.catch((e) => { console.log(e); } )
        },[]);
 */
-	let devices = [
+	const devices = [
 		{ modelname: 'Breda Castle', status: 30001, serialnumber: '80002453' },
 		{ modelname: 'Leiden', status:     0, serialnumber: '80002454' },
 		{ modelname: 'Fredrik Hendrik', status: 10001, serialnumber: '80002455' },
@@ -69,7 +69,7 @@ export default function NetherlandsPage(){
 		<Badge>List of Netherlands</Badge>
 		<p />
 		<ul>
-			{ devices.map( (obj) => (<li>{obj.modelname}    {obj.status} <Link href="/devicedetail">...</Link></li>) ) }
+			{ devices.map( (obj) => (<li key={obj.serialnumber}>{obj.modelname}    {obj.status} <Link href="/devicedetail">...</Link></li>) ) }
 		</ul>
 		<p />
 		<Button backgroundColor="#1E90FF" color="white">Detail</Button>
