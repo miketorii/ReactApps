@@ -7,7 +7,7 @@ export default function DeviceListPage(){
 
        const [devicedata, setData] = useState('');       
 
-	let devices = [
+	const devices = [
 		{ modelname: 'iR-ADV C5801', status: 30001, serialnumber: '80002453' },
 		{ modelname: 'iR-ADV C5802', status:     0, serialnumber: '80002454' },
 		{ modelname: 'iR-ADV C5803', status: 10001, serialnumber: '80002455' },
@@ -27,7 +27,7 @@ export default function DeviceListPage(){
 		<h1>Device List</h1>
 		<hr />
 		<ul>
-			{ devices.map( (obj) => (<li>{obj.modelname}    {obj.serialnumber}    {obj.status} <Link href="/devicedetail">...</Link></li>) ) }
+			{ devices.map( (obj) => (<li key={obj.serialnumber}>{obj.modelname}    {obj.serialnumber}    {obj.status} <Link href="/devicedetail">...</Link></li>) ) }
 		</ul>
 		<p />
 		<hr />
