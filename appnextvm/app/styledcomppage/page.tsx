@@ -55,10 +55,10 @@ export default function NetherlandsPage(){
 
 
 	async function getData(){
-	    const res = await fetch("/api/getdevice");
-    	    const data = await res.json();
-    	    setData(data.modelname);
-	};
+            const res = await fetch("/api/getdevice");
+            const data = await res.json();
+            setData(data.modelname);
+	}
 
 	return (
               <div>
@@ -78,6 +78,6 @@ export default function NetherlandsPage(){
 		<button onClick={getData}>get</button>
 		<p />
 		<Link href="/">Back</Link>
-	      </div>
+              </div>
 	);
-};
+}

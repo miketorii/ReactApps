@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLinks } from './ui/nav-links';
 
 import Footer from './_components/Footer';

@@ -17,10 +17,11 @@ export default function DeviceListPage(){
 
 
 	async function getData(){
-	    const res = await fetch("/api/getdevice");
-    	    const data = await res.json();
-    	    setData(data.modelname);
-	};
+            const res = await fetch("/api/getdevice");
+            const data = await res.json();
+            setData(data.modelname);
+	}
+
 
 	return (
               <div>
@@ -36,6 +37,6 @@ export default function DeviceListPage(){
 		<br />
 		<hr />
 		<Link className="w3-button w3-black w3-section w3-right" href="/">Back</Link>
-	      </div>
+              </div>
 	);
-};
+}
